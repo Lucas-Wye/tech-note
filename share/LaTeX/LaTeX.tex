@@ -1,0 +1,148 @@
+
+\documentclass{beamer}
+\usepackage[UTF8,space,hyperref]{ctex}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=red,
+    urlcolor=red,
+}
+% 使用等线字体
+\setCJKsansfont{DengXian}
+
+% for themes, etc.
+\mode<presentation>
+{ \usetheme{boxes} }
+
+\usepackage{times}  % fonts are up to you
+\usepackage{graphicx}
+
+% these will be used later in the title page
+\title{\LaTeX: What, Why and How}
+\author{ QSC-Tech\ 舞王\\ lucas.zw.ye@outlook.com }
+
+% 显示英文格式的日期
+\CTEXoptions[today=old]
+\date{March 7th, 2021}
+
+% 去除下方导航栏
+\setbeamertemplate{navigation symbols}{}
+
+% have this if you'd like a recurring outline
+\AtBeginSection[]  % "Beamer, do the following at the start of every section"
+{
+\begin{frame}<beamer> 
+\frametitle{Outline} % make a frame titled "Outline"
+\tableofcontents[currentsection]  % show TOC and highlight current section
+\end{frame}
+}
+
+\begin{document}
+
+% this prints title, author etc. info from above
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{What is \LaTeX}
+
+\begin{frame}
+\frametitle{Introduction}
+\begin{itemize}
+	\item a document preparation system for high-quality typesetting.
+	\item for medium-to-large technical or scientific documents but also for almost any form of publishing.
+	\item the standard for the communication and publication of scientific documents. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Introduction}
+It is available as free software.
+
+\LaTeX\ is not a word processor! Instead, \LaTeX\ encourages authors not to worry too much about the appearance of their documents but to concentrate on getting the right content.
+\end{frame}
+
+\begin{frame}
+\frametitle{\LaTeX\ Features}
+\begin{itemize}
+	\item Typesetting journal articles, technical reports, books, and slide presentations.
+	\item Control over large documents containing sectioning, cross-references, tables and figures.
+	\item Typesetting of complex mathematical formulas.
+	\item Automatic generation of bibliographies and indexes.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Introduction}
+\LaTeX\ is not a stand-alone typesetting program in itself, but document preparation software that runs on top of Donald E. Knuth's TeX typesetting system. 
+
+TeX distributions usually bundle together all the parts needed for a working TeX system and they generally add to this both configuration and maintenance utilities.
+\end{frame}
+
+\begin{frame}
+\frametitle{History}
+\TeX\ is a computer language designed for use in typesetting.
+
+Invented by Donald E. Knuth when he was revising the second volume of his multivolume magnum opus `The Art of Computer Programming`.
+
+Bugs Reports: program bugs rise by powers of 2 each year from \$1.28 or so to a maximum of \$327.68.
+
+\href{https://www.tug.org/whatis.html}{Click Here}
+\end{frame}
+
+\section{Why people use \LaTeX}
+\begin{frame}
+\frametitle{Why?}
+Advantages
+\begin{itemize}
+	\item Focus on your content without worrying the format of your document.
+	\item Helpful to process with a lot of files(texts, figures ...).
+	\item High typographical quality of the documents.
+	\item Documents with a lot of mathematics symbols.
+	\item Easy to use `git` for version control.
+\end{itemize}
+Disadvantages
+\begin{itemize}
+	\item Take time to learn.
+	\item Not easy to change the design of document.
+\end{itemize}
+\end{frame}
+
+\section{How to learn and use \LaTeX}
+\begin{frame}
+\frametitle{How?}
+Software requirements: 
+\begin{itemize}
+	\item `Texlive`, `MiKTex` or other useful LaTeX distributions. 
+	\item Editor such as `Vim`.
+	\item PDF Reader such as `SumatraPDF`.
+	\item Or the Online Environment \href{overleaf.com/}{Overleaf}
+\end{itemize}
+My configuration: Texlive + Vim + \href{https://github.com/lervag/vimtex}{Vimtex} + SumatraPDF
+
+Reference Link: \href{https://www.latex-project.org/get/}{\LaTeX\ Project}, \href{https://www.ctan.org/pkg/latex}{CTAN(Comprehensive \TeX\ Archive Network)}
+\end{frame}
+
+\begin{frame}
+\frametitle{\LaTeX\ Tutorials}
+\begin{itemize}
+	\item \href{https://liam.page/2014/09/08/latex-introduction/}{ 一份其实很短的 LaTeX 入门文档 }
+	\item \href{http://tug.ctan.org/info/lshort/english/lshort.pdf}{The Not So Short Introduction to \LaTeX 2$\epsilon$}\ or use the command `texdoc lshort`
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Use \LaTeX\ templates}
+\begin{itemize}
+	\item \href{http://latexstudio.net/}{Latex工作室}
+	\item \href{https://www.overleaf.com/latex/templates}{Templates from Overleaf}
+	\item \href{http://www.latextemplates.com/}{English LaTeX Templates}
+	\item \href{https://github.com/TheNetAdmin/zjuthesis}{zjuthesis}
+	\item \href{http://github.com/Lucas-Wye/Latex\_template}{LaTeX Templates for ZJU}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\centering Thanks
+\end{frame}
+\end{document}

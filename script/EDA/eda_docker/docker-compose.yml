@@ -1,0 +1,15 @@
+services:
+  eda-docker:
+    image: phyzli/ubuntu18.04_xfce4_vnc4server_synopsys
+    ports:
+      - "12289:5901"
+      # - "10134:22"
+    hostname: lizhen
+    volumes:
+      - /mypath:/work
+    working_dir: /work
+    stdin_open: true
+    tty: true
+    command: bash
+    mac_address: 02:42:ac:11:00:02
+
