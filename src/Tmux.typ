@@ -53,6 +53,17 @@ tmux source-file ~/.tmux.conf
 [PREFIX] "
 ```
 
+== 用户共享
+The first user should run:
+```sh
+tmux -S /tmp/shared new-session -s shared
+chmod 777 /tmp/shared
+```
+The second user:
+```sh
+tmux -S /tmp/shared attach-session -t shared
+```
+
 == More
 #label("more")
 #link("http://louiszhai.github.io/2017/09/30/tmux/")[tmux使用手册]
