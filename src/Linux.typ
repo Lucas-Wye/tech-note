@@ -163,7 +163,12 @@ df -h
 sudo umount YOUR_PATH 
 ```
 
-== Ubuntu开机自动挂载Windows硬盘分区
+== Fedora Firefox 视频播放异常处理
+```
+sudo dnf install ffmpeg ffmpeg-libs --allowerasing
+```
+
+== 开机自动挂载Windows硬盘分区
 ```
 查看分区信息
 sudo fdisk -l
@@ -191,16 +196,8 @@ sudo vim /etc/fstab
 # for Windows 10 C:/
 /dev/nvme0n1p2 /home/usrname/Windows_Disks/C ntfs defaults 0 0
 
-# for Windows 10 D:/
-/dev/nvme0n1p3 /home/usrname/Windows_Disks/D ntfs defaults 0 0
-
 挂载新添加的分区
 sudo mount -a
-```
-
-== 删除ppa源
-```sh
-cd /etc/apt/sources.list.d/ # 找到关于源的文件,删除即可
 ```
 
 == 字体
@@ -297,22 +294,6 @@ ssh HOSTNAME
 # SSH for data transfer
 ssh -qTfnN -D PORT SERVER 
 ```
-
-== Mac OS Theme for Ubuntu
-```sh
-sudo apt install gnome-tweak-tool gnome-shell-extensions
-
-git clone --depth=1 https://github.com/vinceliuice/Sierra-gtk-theme
-cd Sierra-gtk-theme
-./install.sh
-
-git clone --depth=1 https://github.com/USBA/Cupertino-iCons
-sudo cp -r Cupertino-iCons /usr/share/icons
-```
-
-安装完成后，打开`tweak` \
-设置`Appearance`-\>`Themes`-\>`Applications`为`Sierra-light` \
-设置`Appearance`-\>`Themes`-\>`Icons`为`Cupertino-iCons`
 
 == More
 #link("https://github.com/QSCTech/2020-Autumn-Round-Two/tree/master/problem-set-1")[A good introduction to Linux]
