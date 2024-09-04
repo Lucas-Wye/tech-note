@@ -1,5 +1,5 @@
 = Linux
--  Linux是一套免费使用和自由传播的类Unix操作系统，是一个基于POSIX和Unix的多用户、多任务、支持多线程和多CPU的操作系统。它能运行主要的Unix工具软件、应用程序和网络协议。它支持32位和64位硬件。Linux继承了Unix以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。
+- Linux是一套免费使用和自由传播的类Unix操作系统，是一个基于POSIX和Unix的多用户、多任务、支持多线程和多CPU的操作系统。它能运行主要的Unix工具软件、应用程序和网络协议。它支持32位和64位硬件。Linux继承了Unix以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。
 
 == Control Key
 ```
@@ -41,7 +41,7 @@ man
 chmod
 umask # set in startup files for the account to masks out permissions, umask numbers added to desired permission number equals 7.
 chgrp # change the group of the file
-chown # change the owner of a file 
+chown # change the owner of a file
 
 # 查看当前目录文件大小
 # (1)列出当前目录下每个文件的大小，同时也会给出当前目录下所有文件大小总和
@@ -67,7 +67,7 @@ cat YOUR_FILE | sed -e '/^$/d'
 sudo apt install exfat-utils
 
 # 打包
-tar -cvf  YOUR_FILE.tar YOUR_FILE # 仅打包 
+tar -cvf  YOUR_FILE.tar YOUR_FILE # 仅打包
 tar -zcvf YOUR_FILE.tar.gz YOUR_FILE # gzip压缩
 tar -jcvf YOUR_FILE.tar.bz2 YOUR_FILE # bzip2压缩
 
@@ -85,7 +85,7 @@ tar -jxvf YOUR_FILE.tar.bz2
 == find and search
 ```
 # 查找24小时内修改过的文件
-find ./ -mtime 0 
+find ./ -mtime 0
 # 查找当前目录及子目录中的.c文件
 find . -name "*.c"
 # 查找当前目录符合条件的文件内容
@@ -124,7 +124,7 @@ history  | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head #
 
 == CPU
 ```
-# 总核数 = 物理CPU个数 x 每颗物理CPU的核数 
+# 总核数 = 物理CPU个数 x 每颗物理CPU的核数
 # 总逻辑CPU数 = 物理CPU个数 x 每颗物理CPU的核数 x 超线程数
 
 # 物理CPU个数
@@ -152,15 +152,15 @@ free
 == 磁盘
 ```sh
 # 硬盘信息
-fdisk -l 
+fdisk -l
 # 查看磁盘IO的性能
 iostat -x 10
 # 挂载硬盘到某个文件夹
-sudo mount /dev/sda YOUR_PATH 
+sudo mount /dev/sda YOUR_PATH
 # 查看硬盘挂载信息
 df -h
 # 取消挂载
-sudo umount YOUR_PATH 
+sudo umount YOUR_PATH
 ```
 
 == Fedora Firefox 视频播放异常处理
@@ -222,7 +222,7 @@ fc-list:lang=zh-cn
 tee                    复制stdout
 >/dev/null             直接扔掉stdout
 1>FILE_1 2>FILE_2        stdout to FILE_1, stderr to FILE_2
->FILE 2>&1             redirect stdout and stderr to FILE 
+>FILE 2>&1             redirect stdout and stderr to FILE
 2>&1 | tee             将stderr和stdout输出到文件的同时在屏幕上输出
 ```
 
@@ -249,9 +249,9 @@ openssl rand -base64 NUMBER
 ```
 
 == terminal output to clip
--  Windows: `clip`
--  MacOS: `pbcopy`, `pbpaste`
--  Linux: `xsel`
+- Windows: `clip`
+- MacOS: `pbcopy`, `pbpaste`
+- Linux: `xsel`
 
 == ssh
 ```sh
@@ -268,7 +268,7 @@ ps -e | grep ssh
 ## SSH远程登录
 ssh username@IP_ADDR
 
-# 将文件/文件夹从远程机下载到本地(scp) 
+# 将文件/文件夹从远程机下载到本地(scp)
 scp -r username@IP_ADDR:/home/username/remotefile.txt .
 
 # 设置公钥登录
@@ -292,7 +292,7 @@ Host {HOSTNAME}
 ssh HOSTNAME
 
 # SSH for data transfer
-ssh -qTfnN -D PORT SERVER 
+ssh -qTfnN -D PORT SERVER
 ```
 
 == More

@@ -1,6 +1,6 @@
 = GCC
 #label("gcc")
--  GCC编译器也称为Linux
+- GCC编译器也称为Linux
   GCC命令，它有很多选项。GCC编译器是Linux下最常用的编译器。
 
 == Install
@@ -17,7 +17,7 @@ sudo apt install gcc
 ```sh
 gcc -c filename.c # compile only, produce .o
 gcc -g # compile for debugging
-gcc -o filename.o # 
+gcc -o filename.o #
 gcc -O 1,2,3,4,s,fast # for optimization level
 gcc -Ipathname
 gcc -Dsymbol # define preprocessor symbol
@@ -32,7 +32,7 @@ gdb BINARY_FILE
 list
 br 8 # breakpoint in line 8
 run
-print value 
+print value
 next
 where
 help

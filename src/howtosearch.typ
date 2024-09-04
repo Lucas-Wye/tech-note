@@ -1,8 +1,7 @@
 = How to use search engine
 #label("how-to-use-search-engine")
--  Search engines are systems that enable users to search for documents
-  on the World Wide Web.
--  Popular examples include Yahoo!Search, Bing, Google, and Ask.com.
+- Search engines are systems that enable users to search for documents on the World Wide Web.
+- Popular examples include Yahoo!Search, Bing, Google, and Ask.com.
 
 == 特殊符号
 #label("特殊符号")
@@ -46,16 +45,16 @@ eg: 高斯分布 site:zh.wikipedia.org
 
 == 特殊搜索
 #label("特殊搜索")
--  中文文献 \
+- 中文文献 \
   #link("http://xueshu.baidu.com")[百度学术] \
   #link("https://cn.bing.com/academic?mkt=zh-CN")[bing学术] \
   #link("https://scholar.google.com")[谷歌学术]
--  英文文献 \
+- 英文文献 \
   #link("https://cn.bing.com/academic?mkt=zh-CN")[bing学术] \
   #link("https://scholar.google.com")[谷歌学术] \
   #link("https://sci-hub.tw")[Sci-hub] \
   #link("http://ieeexplore.ieee.org")[IEEE]
--  编程相关 \
+- 编程相关 \
   #link("http://github.com")[github] \
   #link("https://medium.com")[medium] \
   #link("http://stackoverflow.com")[stackoverflow]

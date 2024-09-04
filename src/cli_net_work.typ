@@ -1,14 +1,11 @@
 = Network
 #label("network")
--  A computer network is a digital telecommunications network which
-  allows nodes to share resources. In computer networks, computing
-  devices exchange data with each other using connections (data links)
-  between nodes.
+- A computer network is a digital telecommunications network which allows nodes to share resources. In computer networks, computing devices exchange data with each other using connections (data links) between nodes.
 
 == Commands
 #label("commands")
 ```sh
-ping 
+ping
 domainname
 hostname
 
@@ -57,15 +54,15 @@ yum install aria2
 aria2c "url"
 # 分段下载，利用 aria2 的分段下载功能可以加快文件的下载速度
 # 使用 2 个连接来下载该文件，s的参数值介于 1~5 之间
-aria2c -s 2 "url"  
+aria2c -s 2 "url"
 
 # 断点续传，在命令中使用 c 选项可以断点续传文件
-aria2c -c "url" 
+aria2c -c "url"
 ```
 
 === curl
 #label("curl")
--  client URL tool
+- client URL tool
 
 (1)不带有任何参数时，发出 GET 请求
 
@@ -90,7 +87,7 @@ curl -b 'foo=bar' https://google.com
 
 ```sh
 curl -d'login=emma＆password=123'-X POST https://google.com/login
-# `--data-urlencode` 等同于 `-d` 
+# `--data-urlencode` 等同于 `-d`
 # 发送 POST 请求的数据体，区别在于会自动将发送的数据进行 URL 编码
 ```
 
@@ -109,8 +106,8 @@ curl -d '{"login": "emma", "pass": "123"}' -H 'Content-Type: application/json' h
 ```
 
 #block[
-#set enum(numbering: "(1)", start: 7)
-+  `-i` 参数打印出服务器回应的 HTTP 标头
+  #set enum(numbering: "(1)", start: 7)
+  + `-i` 参数打印出服务器回应的 HTTP 标头
 ]
 
 ```sh

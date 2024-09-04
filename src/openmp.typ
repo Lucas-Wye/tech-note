@@ -1,7 +1,6 @@
 = OpenMP
 #label("openmp")
--  OpenMP是由OpenMP Architecture Review
-  Board牵头提出的，并已被广泛接受的，用于共享内存并行系统的多线程程序设计的一套编译指令
+- OpenMP是由OpenMP Architecture Review Board牵头提出的，并已被广泛接受的，用于共享内存并行系统的多线程程序设计的一套编译指令
   (Compiler Directive)。
 
 == Introduction
@@ -20,7 +19,7 @@ int main(void) {
     const int n = 10;
     int arr[n];
 
-    #pragma omp parallel for  
+    #pragma omp parallel for
     for(int i = 0;i < n;i++) {
         arr[i] = i;
         printf("%d\n",i);
@@ -30,7 +29,7 @@ int main(void) {
         printf("%d\n",arr[j]);
     }
 
-    return 0;      
+    return 0;
 }
 ```
 

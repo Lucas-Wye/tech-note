@@ -1,7 +1,7 @@
 = Python
 #label("python")
--  Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。
--  Python 由 Guido van Rossum 于 1989 年底发明，第一个公开发行版发行于
+- Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。
+- Python 由 Guido van Rossum 于 1989 年底发明，第一个公开发行版发行于
   1991 年。 像 Perl 语言一样, Python 源代码同样遵循 GPL(GNU General
   Public License) 协议。
 
@@ -13,10 +13,10 @@ anaconda/miniconda 安装即可。
 == conda创建python虚拟环境
 #label("conda创建python虚拟环境")
 ```sh
-# 查看当前存在哪些虚拟环境                                
+# 查看当前存在哪些虚拟环境
 conda env list
 ## or
-conda info -e 
+conda info -e
 # 创建虚拟环境
 conda create -n your_env_name python=X.X  # 版本选择：2.7、3.6等
 # 激活环境
@@ -62,7 +62,7 @@ jupyter notebook password
 ```python
 c.NotebookApp.ip = '*' # 允许任何IP访问
 c.NotebookApp.password = u'sha:...' # 密码的哈希值
-c.NotebookApp.open_browser = False 
+c.NotebookApp.open_browser = False
 c.NotebookApp.port = 8888 # 自行指定一个端口
 ```
 
@@ -102,17 +102,17 @@ envs_dirs:
 == pip
 #label("pip")
 ```sh
-# 导入依赖包                                
-pip install -r requirements.txt 
+# 导入依赖包
+pip install -r requirements.txt
 # 只导出项目依赖包
 pip install pipreqs
 pipreqs ./
 # 导出依赖包
 pip freeze > requirements.txt
 # 离线下载
-pip download -d [DIR] -r requirements.txt 
+pip download -d [DIR] -r requirements.txt
 # 离线安装
-pip install --no-index --find-links=[DIR] -r requirements.txt  
+pip install --no-index --find-links=[DIR] -r requirements.txt
 ```
 
 === 镜像源

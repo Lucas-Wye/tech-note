@@ -1,11 +1,8 @@
 = Git
 #label("git")
--  Git
-  是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
--  Git 是 Linus Torvalds 为了帮助管理 Linux
-  内核开发而开发的一个开放源码的版本控制软件。
--  Git 与常用的版本控制工具 CVS, Subversion
-  等不同，它采用了分布式版本库的方式，不必服务器端软件支持。
+- Git 是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
+- Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件。
+- Git 与常用的版本控制工具 CVS, Subversion 等不同，它采用了分布式版本库的方式，不必服务器端软件支持。
 
 == 创建版本库
 #label("创建版本库")
@@ -111,11 +108,17 @@ git push --tags
 git submodule add <仓库地址> <本地路径>
 # 检出子仓库
 git submodule init # 初始化本地配置文件
-git submodule update # 检出父仓库列出的commit 
+git submodule update # 检出父仓库列出的commit
 ## 或者
 git submodule update --init --recursive
 # 递归克隆
 git clone <仓库地址> --recursive
+```
+
+== worktree
+可以在多个不同的目录显示不同git分支内容
+```sh
+git worktree
 ```
 
 == 合并多个commit
@@ -158,12 +161,12 @@ DONE.
 
 == stash
 #label("stash")
--  stash 是 Git
+- stash 是 Git
   提供的一种机制，它可以将当前工作目录和暂存区的修改保存起来。当我们需要切换分支、执行
   pull 操作或解决一些紧急 bug 时，stash
   可以帮助我们保存当前的修改，避免丢失工作。
 
--  我们可以把 stash 看作是一个临时保存修改的容器，每次执行 stash
+- 我们可以把 stash 看作是一个临时保存修改的容器，每次执行 stash
   操作时，Git
   将当前的修改保存到一个栈中，并将工作目录和暂存区恢复到最新的提交状态。stash
   不会创建新的提交记录，它只是将修改暂时存储起来

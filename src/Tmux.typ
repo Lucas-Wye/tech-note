@@ -1,7 +1,6 @@
 = tmux
 #label("tmux")
--  tmux是一个优秀的终端复用软件，类似GNU
-  Screen，但来自于OpenBSD，采用BSD授权
+-  tmux是一个优秀的终端复用软件，类似GNU Screen，但来自于OpenBSD，采用BSD授权
 -  使用它最直观的好处就是，通过一个终端登录远程主机并运行tmux后，在其中可以开启多个控制台而无需再“浪费”多余的终端来连接这台远程主机
 
 == Install
