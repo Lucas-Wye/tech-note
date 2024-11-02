@@ -226,6 +226,15 @@ tee                    复制stdout
 2>&1 | tee             将stderr和stdout输出到文件的同时在屏幕上输出
 ```
 
+== 清理僵尸进程
+```
+# find process
+ps aux | awk '$8 ~ /^[Zz]/'
+# find parent process
+ps -A -ostat,pid,ppid | grep -e '[zZ]'
+# kill parent process
+```
+
 == 开机进入命令行
 ```sh
 sudo systemctl set-default multi.user # 进入命令行
