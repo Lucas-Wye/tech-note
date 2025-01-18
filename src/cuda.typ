@@ -1,5 +1,5 @@
 = Cuda
-+ SM（Streaming Multiprocessor）和SP（streaming Processor）是硬件层次的，其中一个SM可以包含多个SP。
++ SM（Streaming Multiprocessor）和SP（Streaming Processor）是硬件层次的，其中一个SM可以包含多个SP。
   thread是一个线程，多个thread组成一个线程块block，多个block又组成一个线程网格grid
 
 + 在CUDA 架构下执行时的最小单位是thread。

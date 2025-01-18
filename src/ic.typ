@@ -82,6 +82,13 @@
 - 保持时间：数据在时钟到达后需要保持稳定的最短时间
 - 建立时间+ 保持时间=时钟周期
 
+#figure(
+  image("fig/circuit.jpg")
+)
+
+#figure(
+  image("fig/circuit_analysis.jpg")
+)
 
 == IC协议
 === AXI总线
@@ -93,9 +100,9 @@
 
 ==== 突发传输
 ===== 类型
-FIXED: 地址固定(FIFO)
-INCR: 地址递增(Memory)
-WRAP：地址递增，回环(Cache line)
++ FIXED: 地址固定(FIFO)
++ INCR: 地址递增(Memory)
++ WRAP：地址递增，回环(Cache line)
 
 ===== 突发读传输
 信号
@@ -136,8 +143,7 @@ WRAP：地址递增，回环(Cache line)
 可以是一次传输中先后出现不同ID的数据。
 
 ==== 非对齐传输
-一个笔数据非对齐，后面的仍然保持对齐。
-
+第一笔数据非对齐，后面的仍然保持对齐。
 
 === APB总线
 - 最大支持32bit的数据位宽
