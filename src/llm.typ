@@ -105,4 +105,4 @@ https://blog.csdn.net/v_JULY_v/article/details/133619540
 
 == 激活函数
 - SiLU (Sigmoid Linear Unit) (Swish) = x $dot.op$ sigmoid(x)
-- GELU (Gaussian Error Linear Unit) =  x $dot.op$ P($X <= x$) $approx x dot.op $ sigmoid(1.702x)
+- GELU (Gaussian Error Linear Unit) = x $dot.op$ P($X <= x$) $approx x dot.op $ sigmoid(1.702x)

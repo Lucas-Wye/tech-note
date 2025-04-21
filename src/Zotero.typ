@@ -8,12 +8,15 @@ Zotero is a free, easy-to-use tool to help you collect, organize, cite, and shar
     align: (col, row) => (auto, auto).at(col),
     inset: 6pt,
     [Requirements], [Operations],
-    [查看文献条目所属的分类], [选中该条目后按住Ctrl/Option/Alt，该文献所在的文件夹就会高亮为黄色],
+    [查看文献条目所属的分类],
+    [选中该条目后按住Ctrl/Option/Alt，该文献所在的文件夹就会高亮为黄色],
+
     [在文献集（Collections）之间移动文献],
     [选中待移动的文献，然后根据你的操作系统按下相应快捷键， macOS：`Cmd`
       Windows/Linux：`Shift`，将该文献拖拽到其他文献集即可],
 
-    [快速查看近期添加的文献], [右键单击#strong[My Library]，选择#strong[New Saved
+    [快速查看近期添加的文献],
+    [右键单击#strong[My Library]，选择#strong[New Saved
   Search]，进行具体的设置],
   )
 ]

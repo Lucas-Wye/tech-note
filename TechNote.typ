@@ -69,3 +69,6 @@
 #pagebreak()
 
 #include "src/cuda.typ"
+#pagebreak()
+
+#include "src/world-quant.typ"

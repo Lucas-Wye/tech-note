@@ -145,8 +145,12 @@
   [\*], [match any string of zero or more characters],
   [\[abc…\]], [match any of the enclosed characters],
   [\[a-e\]], [match any characters in the range a,b,c,d,e],
-  [\[!def\]], [match any characters not one of the enclosed characters, sh/bash],
-  [{abc,bcd,cde}], [match any set of characters separated by comma (,) (no spaces), bash/csh],
+  [\[!def\]],
+  [match any characters not one of the enclosed characters, sh/bash],
+
+  [{abc,bcd,cde}],
+  [match any set of characters separated by comma (,) (no spaces), bash/csh],
+
   [~], [home directory of the current user, bash/csh],
   [~ user], [home directory of the specified user, bash/csh],
   [.], [match any single character except newline],

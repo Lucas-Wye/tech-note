@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 set SRC=TechNote
 
-if "%1"=="c" goto compile
+if "%1"=="z" goto compile
 if "%1"=="f" goto format
 if "%1"=="o" goto open
 if "%1"=="" goto end
