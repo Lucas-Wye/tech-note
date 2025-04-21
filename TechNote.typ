@@ -1,29 +1,15 @@
-#align(
-  center,
-  text(24pt)[
-    *TechNote*
-  ],
-)
-#align(
-  center,
-  text(21pt)[
-    *Lucas-Wye*
-  ],
-)
+#import "winnote/lib.typ": *
 
 #let date = datetime.today()
-#align(
-  center,
-  text(17pt)[
-    #date.display()
-  ],
+#show: winnote.with(
+  title: "TechNote",
+  author: "lucas.zw.ye@outlook.com",
+  createtime: date.display(),
+  lang: "zh",
+  bibliography-style: "ieee",
+  // preface: [], //Annotate this line to delete the preface page.
+  // bibliography-file: bibliography("refs.bib"), //Annotate this line to delete the bibliography page.
 )
-
-#set heading(numbering: "1.1.1")
-#show outline.entry.where(level: 1): it => {
-  v(12pt, weak: true)
-  strong(it)
-}
 
 #outline(indent: auto)
 #pagebreak()

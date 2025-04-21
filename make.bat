@@ -1,17 +1,26 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set MAIN=TechNote
+set SRC=TechNote
 
-if "%1"=="z" goto build
+if "%1"=="c" goto compile
+if "%1"=="f" goto format
 if "%1"=="o" goto open
+if "%1"=="" goto end
 
-:build
-typst compile %MAIN%.typ %MAIN%.pdf
+:compile
+typst.exe compile %SRC%.typ %SRC%.pdf
+goto end
+
+:format
+for %%f in (*.typ) do (
+    echo "%%f"
+    typstyle.exe -i "%%f"
+)
 goto end
 
 :open
-start "" /max %MAIN%.pdf
+start "" /max %SRC%.pdf
 goto end
 
 :end
